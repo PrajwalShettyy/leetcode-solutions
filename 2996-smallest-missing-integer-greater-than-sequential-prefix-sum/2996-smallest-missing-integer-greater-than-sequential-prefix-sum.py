@@ -3,12 +3,9 @@ class Solution:
         prefixSum = nums[0]
 
         for i in range(1, len(nums)):
-            if nums[i] == nums[i - 1] + 1:
-                prefixSum += nums[i]
-            else:
-                break
+            if nums[i] == nums[i - 1] + 1:  prefixSum += nums[i]
+            else: break
 
-        while prefixSum in nums:
-            prefixSum += 1
+        while prefixSum in nums : prefixSum += 1
 
         return prefixSum
