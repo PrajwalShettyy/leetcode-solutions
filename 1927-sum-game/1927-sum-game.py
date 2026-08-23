@@ -16,17 +16,8 @@ class Solution:
 
             return left, right, left_q, right_q
 
-        
         left, right, left_q, right_q = calculate(num)
 
         diff = left - right
 
-        return True if (left_q + right_q) % 2 == 1 else   diff != 9 * (right_q - left_q) // 2
-            
-
-    
-        
-            
-
-        
-        
+        return True if (left_q + right_q) % 2 == 1 else   diff != 9 * (right_q - left_q) // 2   
