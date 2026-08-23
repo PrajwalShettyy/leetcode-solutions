@@ -2,8 +2,7 @@ class Solution:
     def sumGame(self, num: str) -> bool:
 
         def calculate(num: str) -> tuple[int, int, int, int]:
-            left, right = 0, 0
-            left_q, right_q = 0, 0
+            left , left_q , right , right_q = 0 , 0 , 0 , 0
             mid = len(num) // 2
 
             for index, char in enumerate(num):
