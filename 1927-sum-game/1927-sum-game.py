@@ -21,9 +21,7 @@ class Solution:
 
         diff = left - right
 
-        if (left_q + right_q) % 2 == 1: return True
-
-        return diff != 9 * (right_q - left_q) // 2
+        return True if (left_q + right_q) % 2 == 1 else   diff != 9 * (right_q - left_q) // 2
             
 
     
