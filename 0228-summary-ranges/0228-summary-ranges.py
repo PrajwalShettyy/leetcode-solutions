@@ -2,6 +2,7 @@ class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
         summaryRangeList = []
         i , j , diff = 0 , 0 , 0
+        
         while i < len(nums) :
             while j < len(nums) and  ( nums[i] + diff ) == nums[j] :
                 j , diff = j + 1 , diff + 1
